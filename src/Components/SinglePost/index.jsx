@@ -1,5 +1,5 @@
 import { useEffect, useState, useContext } from "react";
-import { axiosQuery } from "../../api";
+import { axiosQuery, reactConfig } from "../../api";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import "./singlePost.css";
@@ -7,7 +7,6 @@ import { Context } from "../../context/Context";
 import { useNavigate } from "react-router-dom";
 
 export default function SinglePost() {
-  const PF = "http://localhost:5000/";
 
   const location = useLocation();
   const path = location.pathname.split("/")[2];
@@ -53,7 +52,7 @@ export default function SinglePost() {
     <div className="singlePost">
       <div className="singlePostWrapper">
         {post.photo && (
-          <img src={PF + post.photo} alt="" className="singlePostImg" />
+          <img src={`${reactConfig.BASED_URL}/${post.photo}`} alt="" className="singlePostImg" />
         )}
         {updateMode ? (
           <input
