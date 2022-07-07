@@ -1,0 +1,74 @@
+.register{
+   min-height: calc(100vh - 70px);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background : linear-gradient(
+    rgba(255,255,255,0),
+    rgba(255,255,255,0)
+    ) ,url("/public/tree.jpg")center center no-repeat fixed;
+    background-size: cover;
+}
+
+.registerTitle{
+    font-size: 50px;
+    color: wheat;
+}
+
+.registerform{
+
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.registerform >label{
+    margin:10px 0 ;
+}
+.registerInput{
+    padding: 10px;
+    border-color: white;
+    border: none;
+}
+.registerButton{
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: teal;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+
+}
+.registerLoginButton{
+position: absolute;
+right: 20px;
+background-color: rgb(105, 33, 75);
+cursor: pointer;
+border: none;
+padding: 10px;
+color: white;
+border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
